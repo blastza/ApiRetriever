@@ -23,7 +23,6 @@ const App = () => {
       if(data.length > 0){
         setProvince(data);
       }
-      console.log(data);
     } catch(e) {
       console.error(e);
     }

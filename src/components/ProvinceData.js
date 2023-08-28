@@ -3,17 +3,12 @@ const ProvinceData = ({province}) => {
         <>
             {
                 province.map((curProvince) => {
-                    const {displayname, value} = curProvince;
-                    console.log(curProvince.display_name);
+                    const {"display-name": displayName, value} = curProvince;
 
                     return (
-                        <tr key={displayname}>
-                            <td>
-                                {displayname}
-                            </td>
-                            <td>
-                                {value}
-                            </td>
+                        <tr key={displayName}>
+                            <td>{displayName}</td>
+                            <td>{value}</td>
                         </tr>
                     )
                 })
